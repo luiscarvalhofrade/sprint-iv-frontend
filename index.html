@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Projeto</title>
+</head>
+
+<body>
+     <!-- Cabeçalho de informações do sistema -->
+    <header>
+        <div class="title">
+            <h2>Predição se a mãe fumou na gravidez</h2>
+        </div>
+    </header>
+
+     <!-- Opções para adicionar um novo item -->
+    <section class="newItem">
+        <input type="text" id="newBwt" placeholder="Peso do Bêbe (em ounces):">
+        <input type="text" id="newGestation" placeholder="Gestação (em dias):">
+        <input type="text" id="newParity" placeholder="Primogenito?:">
+        <input type="text" id="newAge" placeholder="Idade (em anos):">
+        <input type="text" id="newHeight" placeholder="Altura da mãe (em pounds):">
+        <input type="text" id="newWeight" placeholder="Peso da Mãe (em inches):">
+        <span onclick="newItem()" class="addBtn">Adicionar</span>
+    </section>
+
+    <!-- Tabela com items existentes -->
+    <section class="predictions">
+        <table id="myTable">
+            <tr>
+                <th>Peso do Bêbe</th>
+                <th>Gestação</th>
+                <th>Primogenito?</th>
+                <th>Idade da Mãe</th>
+                <th>Altura da mãe</th>
+                <th>Peso da Mãe</th>
+                <th>Resultado</th>
+            </tr>
+        </table>
+    </section>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
